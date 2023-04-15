@@ -2,7 +2,7 @@
 
 {% block body %}
     <h1>Agregar una terea</h1>
-    <form method="post">
+    <form method="post"> <!-- Si no se especifica el action, por defecto se usa la url actual -->
         {% csrf_token %}
         {{ form }}
         <button>Enviar</button>
